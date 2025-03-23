@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   const handleResumeClick = () => {
-    const resumePath = '/resume/resume.pdf';
+    const resumePath = process.env.PUBLIC_URL + '/resume/resume.pdf';
     window.open(resumePath, '_blank', 'noopener,noreferrer');
   };
 

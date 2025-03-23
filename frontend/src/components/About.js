@@ -32,7 +32,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <img 
-              src="/images/profile.jpg" 
+              src={process.env.PUBLIC_URL + '/images/profile.jpg'} 
               alt="Rohit Kaushik - Full Stack Developer" 
               width="300"
               height="300"
