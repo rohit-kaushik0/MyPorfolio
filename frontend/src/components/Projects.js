@@ -29,14 +29,7 @@ const Projects = () => {
         live: 'https://www.linkedin.com/posts/rohit-hrk-517809231_flutter-weatherapp-mobiledevelopment-activity-7227913404030574592-BdIR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADn2b6MBXN9URN0FeUJ3ywMohBcDwJz1sdY'
       },
 
-      {
-        title: 'Project One',
-        
-        description: 'A full-stack web application built with React and Node.js',
-        technologies: ['React', 'Node.js', 'MongoDB'],
-        github: 'https://github.com/yourusername/project-one',
-        live: 'https://project-one.com'
-      },
+      
     // Add more projects here
   ];
 
