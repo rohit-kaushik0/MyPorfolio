@@ -5,9 +5,9 @@ import '../styles/Experience.css';
 const Experience = () => {
   const experiences = [
     {
-     title: "Flutter Developer",
+     title: "Full Stack Developer",
     company: "Zylentrix",
-     period: "2024 - Present",
+     period: "2025 - Present",
     description: [
         "Developing and maintaining cross-platform mobile applications using Flutter and Dart.",
          "Implementing responsive UI components and ensuring seamless user experience.",
