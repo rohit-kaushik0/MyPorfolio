@@ -2,6 +2,11 @@
 
 A modern, responsive portfolio website built with React and styled with CSS. Features smooth animations using Framer Motion and a clean, professional design.
 
+
+## 🌐 Live Demo  
+Check out the live version of my portfolio website here:  
+🔗 [Live Website](https://rohit-kaushik0.github.io/MyPorfolio/)
+
 ## Features
 
 - 🎨 Modern UI Design
