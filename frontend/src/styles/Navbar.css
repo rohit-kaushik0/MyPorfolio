@@ -60,20 +60,3 @@
   }
 }
 
-.resume-button {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--secondary-color);
-  border-radius: 4px;
-  color: var(--secondary-color);
-  background: transparent;
-  cursor: pointer;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.resume-button:hover {
-  background: rgba(100, 255, 218, 0.1);
-  transform: translateY(-2px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}

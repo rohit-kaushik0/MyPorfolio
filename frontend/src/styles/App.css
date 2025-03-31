@@ -11,6 +11,9 @@
   --nav-bg: rgba(10, 25, 47, 0.85);
   --card-shadow: 0 10px 20px rgba(2, 12, 27, 0.7);
   --hover-shadow: 0 20px 30px rgba(2, 12, 27, 0.8);
+  --mobile-width: 480px;
+  --tablet-width: 768px;
+  --desktop-width: 1024px;
 }
 
 * {

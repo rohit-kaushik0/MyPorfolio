@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaBriefcase } from 'react-icons/fa';
 import '../styles/Experience.css';
 
 const Experience = () => {
@@ -9,11 +10,16 @@ const Experience = () => {
     company: "Zylentrix",
      period: "2025 - Present",
     description: [
-        "Developing and maintaining cross-platform mobile applications using Flutter and Dart.",
-         "Implementing responsive UI components and ensuring seamless user experience.",
-         "Collaborating with designers and backend developers to integrate APIs and optimize performance.",
-         "Troubleshooting issues and improving app stability with efficient debugging and testing.",
-         "Staying updated with Flutter best practices and contributing to code quality improvements."
+      "Developing and maintaining the Zylentrix Job Support App, a client-facing mobile application for international job seekers",
+
+      "Implementing responsive UI components using Flutter and Dart to ensure a seamless user experience",
+      
+      " Handling backend development using Firebase, including authentication, database management, and cloud functionss",
+      
+      "Troubleshooting issues, enhancing app stability, and improving code quality through efficient debugging and testing",
+      
+      "Staying updated with Flutter best practices and continuously refining features for scalability and user engagement",
+      "Collaborating with cross-functional teams to gather requirements and deliver high-quality software solutions",
       ]
     },
 
@@ -60,15 +66,31 @@ const Experience = () => {
               className="timeline-item"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ 
+                duration: 0.5, 
+                delay: index * 0.2,
+                type: "spring",
+                stiffness: 100
+              }}
+              whileHover={{ x: 15 }}
             >
               <div className="timeline-content">
-                <h3>{exp.title}</h3>
+                <h3>
+                  <FaBriefcase style={{ color: 'var(--secondary-color)' }} />
+                  {exp.title}
+                </h3>
                 <h4>{exp.company}</h4>
                 <p className="period">{exp.period}</p>
                 <ul>
                   {exp.description.map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <motion.li 
+                      key={i}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: index * 0.2 + i * 0.1 }}
+                    >
+                      {point}
+                    </motion.li>
                   ))}
                 </ul>
               </div>

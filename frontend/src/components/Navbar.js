@@ -9,11 +9,6 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const handleResumeClick = () => {
-    const resumePath = process.env.PUBLIC_URL + '/resume/resume.pdf';
-    window.open(resumePath, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <nav className="navbar">
       <div className="nav-brand">Rohit Kaushik</div>
@@ -24,13 +19,6 @@ const Navbar = () => {
         <div className="nav-item" onClick={() => scrollToSection('skills')}>Skills</div>
         <div className="nav-item" onClick={() => scrollToSection('projects')}>Projects</div>
         <div className="nav-item" onClick={() => scrollToSection('contact')}>Contact</div>
-        <button 
-          className="resume-button" 
-          onClick={handleResumeClick}
-          aria-label="Download Resume"
-        >
-          Resume
-        </button>
       </div>
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span></span>

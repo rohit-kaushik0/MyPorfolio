@@ -50,3 +50,54 @@
 .skill-category li:last-child {
   border-bottom: none;
 }
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--primary-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--text-color);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary-color);
+  background: var(--card-hover);
+}
+
+.skill-item:hover .skill-icon {
+  transform: scale(1.1);
+}
+
+.skill-item:hover .skill-name {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 480px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}

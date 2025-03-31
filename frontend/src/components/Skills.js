@@ -1,11 +1,28 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaReact, FaNode, FaPython } from 'react-icons/fa';
+import { SiJavascript, SiExpress, SiPostgresql, SiFlutter, SiDart, SiCplusplus, SiFirebase } from 'react-icons/si';
 import '../styles/Skills.css';
 
 const Skills = () => {
   const skills = {
-    frontend: ['HTML5', 'CSS3', 'Flutter', 'React', ],
-    backend: ['Node.js', 'Express', 'EJS' ,'PostgreSQL', 'RESTful APIs'],
-    languages: ['C++','Python', 'JavaScript', 'Dart' ,'SQL'],
+    frontend: [
+      { name: 'HTML5', icon: <FaHtml5 /> },
+      { name: 'CSS3', icon: <FaCss3Alt /> },
+      { name: 'Flutter', icon: <SiFlutter /> },
+      { name: 'React', icon: <FaReact /> },
+    ],
+    backend: [
+      { name: 'Node.js', icon: <FaNode /> },
+      { name: 'Express', icon: <SiExpress /> },
+      { name: 'PostgreSQL', icon: <SiPostgresql /> },
+      { name: 'Firebase', icon: <SiFirebase /> },
+    ],
+    languages: [
+      { name: 'C++', icon: <SiCplusplus /> },
+      { name: 'Python', icon: <FaPython /> },
+      { name: 'JavaScript', icon: <SiJavascript /> },
+      { name: 'Dart', icon: <SiDart /> },
+    ],
   };
 
   return (
@@ -16,11 +33,14 @@ const Skills = () => {
           {Object.entries(skills).map(([category, items]) => (
             <div key={category} className="skill-category">
               <h3>{category.charAt(0).toUpperCase() + category.slice(1)}</h3>
-              <ul>
+              <div className="skills-list">
                 {items.map(skill => (
-                  <li key={skill}>{skill}</li>
+                  <div key={skill.name} className="skill-item">
+                    <div className="skill-icon">{skill.icon}</div>
+                    <span className="skill-name">{skill.name}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
