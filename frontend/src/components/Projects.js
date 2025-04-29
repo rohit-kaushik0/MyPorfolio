@@ -5,6 +5,16 @@ import '../styles/Projects.css';
 
 const Projects = () => {
   const projects = [
+
+    {
+      title: 'Stock Price Prediction',
+      description: 'This project predicts stock prices for major global and Indian stocks using advanced machine learning models. It features an interactive Streamlit web app for visualization and forecasting, supporting multiple models and a modern UI.',
+      technologies: [ 'Python', 'Streamlit ', 'Keras', 'Scikit-learn','Pandas', 'NumPy'],
+    
+      github: 'https://github.com/rohit-kaushik0/Stock_maket_prediction',
+      live: 'https://hrkstockmarketpridictiction.streamlit.app/',
+      imageUrl: process.env.PUBLIC_URL + '/images/projects/Stock market.png'
+    },
     {
       title: 'BlogHub-Blog',
       description: 'A full-stack blog application that allows users to create, edit, and view blog posts with a dynamic UI',
@@ -29,6 +39,8 @@ const Projects = () => {
       live: 'https://www.linkedin.com/posts/rohit-hrk-517809231_flutter-weatherapp-mobiledevelopment-activity-7227913404030574592-BdIR?utm_source=share&utm_medium=member_desktop&rcm=ACoAADn2b6MBXN9URN0FeUJ3ywMohBcDwJz1sdY',
       imageUrl: process.env.PUBLIC_URL + '/images/projects/wather_ss.png'
     },
+
+   
     // Add more projects here
   ];
 
